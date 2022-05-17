@@ -1,0 +1,312 @@
+body {
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+/* HEADER */
+.head {
+    text-align: center;
+    margin: 3% 0;
+}
+
+.carousel-inner:after {
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background:rgba(0,0,0,0.6);
+    z-index: 2;
+}
+
+/* MENU */
+.menu {
+    padding: 0 10% 0 10%;
+}
+
+.card {
+    max-width: 300px;
+}
+
+.foodImg {
+	max-width: 100%;
+	height: 11rem;
+}
+
+/* SUBSCRIBE */
+.subscribe {
+    padding: 5% 10% 5% 10%;
+    background-color: lightslategray;
+}
+
+.subscribe form {
+    text-align: center;
+}
+
+.subscribeBox {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Add to Cart */
+.cart {
+	position: fixed;
+	top: 80px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 10%;
+	z-index: 999;
+	transition: 0.3s;
+	background-color: #fff;
+}
+
+.cart:hover {
+	background-color: maroon;
+}
+
+/* User Profile */
+.userProfile {
+	position: fixed;
+	top: 20px;
+	right: 30px;
+	width: 50px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 10%;
+	z-index: 999;
+	transition: 0.3s;
+	background-color: #fff;	
+}
+
+.userProfile:hover {
+	background-color:aqua;
+}
+
+/* Login/ Signup Form */ 
+
+.main {
+	width: 350px;
+	height: 600px;
+	background: red;
+	overflow: hidden;
+	background: url(https://images.unsplash.com/photo-1439853949127-fa647821eba0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80) no-repeat center/ cover;
+	border-radius: 10px;
+	box-shadow: 5px 20px 50px #000;
+}
+
+#chk {
+	display: none;
+}
+
+.login {
+	position: relative;
+	width:100%;
+	height: 100%;
+}
+
+.login label, .signup label {
+	color: crimson;
+	font-size: 2.3em;
+	justify-content: center;
+	display: flex;
+	margin: 60px 60px 30px 60px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: .5s ease-in-out;
+}
+
+.login input, .signup input {
+	width: 60%;
+	height: 25px;
+	background: #e0dede;
+	justify-content: center;
+	display: flex;
+	margin: 20px auto;
+	padding: 10px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+}
+
+.login button, .signup button {
+	width: 60%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #fff;
+	background: crimson;
+	font-size: 1em;
+	font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	transition: .2s ease-in;
+	cursor: pointer;
+}
+
+.login button:hover, .signup button:hover {
+    color: black;
+	background: pink;
+}
+
+.signup {
+	height: 575px;
+	background: #eee;
+	border-radius: 60% / 10%;
+	transform: translateY(-180px);
+	transition: .8s ease-in-out;
+}
+
+.signup label {
+	color: crimson;
+	transform: scale(.6);
+}
+
+#chk:checked ~ .signup{
+	transform: translateY(-650px);
+}
+#chk:checked ~ .signup label{
+	transition: 1500ms;
+	transform: scale(1);	
+}
+#chk:checked ~ .login label{
+	transition: 1500ms;
+	transform: scale(.005);
+}
+
+/* Contact Us Form */
+.isRequired {
+    color: red;
+    font-weight: bold;
+}
+
+.contactForm h4 {
+    text-align: center;
+}
+
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 3;
+}
+
+/* ADDRESS */ 
+
+.address {
+    text-align: center;
+}
+.address a {
+    text-decoration: none;
+    color: black;
+}
+
+.address hr, .contactForm hr {
+    border: none;
+    border-top: 1px #333;	
+    color: #333;
+    overflow: visible;
+    text-align: center;
+}
+
+.address hr:after, .contactForm hr:after {
+    background: #fff;
+    content: '❀';
+    padding: 0 4px;
+    position: relative;
+    top: -12px;
+}
+
+/* FOOTER */
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+/* User Profile Page */
+
+.profilePage {
+	width: 100%;
+	height: 100%;
+}
+
+.orderHistory {
+	width: 100%;
+}
+
+/* Admin Panel */
+.insert {
+	border: 1px black solid;
+	border-radius: 5px;
+	color: black;
+}
+
+.insert:hover {
+	color: white;
+	background-color:lime;
+}
+
+/* IONICONS */
+
+footer ion-icon, #myUserTable ion-icon, #myFoodTable ion-icon {
+	pointer-events: none;
+}
+
+footer ion-icon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.changeImage {
+	font-size: 2rem;
+	text-decoration: none;
+}
+
+.changeImage:hover {
+	font-size: 2rem;
+	color: limegreen;
+	cursor: pointer;
+}
+
+.cart ion-icon {
+	font-size: 2.5rem;
+	text-decoration: none;
+	margin: 0 auto;
+	color: maroon;
+}
+
+.cart ion-icon:hover {
+	color: #fff;
+}
+
+.userProfile ion-icon {
+	font-size: 2.5rem;
+	text-decoration: none;
+	margin: 0 auto;
+	color: black;
+}
+
+.userProfile ion-icon:hover {
+	color: #fff;
+}
+
+table ion-icon {
+	font-size: 1.5rem;
+}
+
+/* MISC */
+.hide {
+	display: none;
+}
